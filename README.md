@@ -1,6 +1,6 @@
 # Clash Royale API**
 
-###🚀Objetivo do Projeto
+##🚀Objetivo do Projeto:
 Armazenar dados de batalhas do jogo em um BD NoSQLpara viabilizar consultas analíticas que permitamanalisar estatísticas de vitórias/derrotas associadas ao
 uso das cartas, visando balancear o jogo
 
