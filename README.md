@@ -1,4 +1,4 @@
-**Clash Royale API**
+#**Clash Royale API**
 
 📑 **Objetivo do Projeto**
 Armazenar dados de batalhas do jogo em um BD NoSQLpara viabilizar consultas analíticas que permitamanalisar estatísticas de vitórias/derrotas associadas ao
@@ -15,11 +15,11 @@ uso das cartas, visando balancear o jogo
 📋 **Pré-requisitos**
 Para rodar o software é necessário ter o python 3.7 para cima, e instalar e importar algumas bibliotecas com os comandos descritos abaixo.
 
-# -instalar biblioteca 
+#instalar biblioteca 
 pip install tk
 pip install pymongo
 
-#- importar biblioteca
+#importar biblioteca
 import tkinter as tk
 from pymongo import MongoClient
 from tkinter import *
