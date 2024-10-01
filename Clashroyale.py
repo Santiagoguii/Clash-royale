@@ -1,10 +1,11 @@
 import tkinter as tk
 from tkinter import ttk, scrolledtext
 from pymongo import MongoClient
+from config import Config
 
 # Conexão com o MongoDB
-client = MongoClient('mongodb+srv://userclash:gmm2509@clashroyale.zisnx.mongodb.net/?retryWrites=true&w=majority&appName=ClashRoyale')
-db = client['mydatabase']
+client = MongoClient(Config.MONGO_URI)
+db = client[Config.DATABASE_NAME]
 
 # Função para ajustar a interface ao redimensionar
 def ajustar_tela(event):
