@@ -13,6 +13,7 @@ uso das cartas, visando balancear o jogo
 6. Elabore mais 3 consultas que você julga relevante para auxiliar no balanceamento do jogo.
 
 ## 📑Pré-requisitos:
+
 Para rodar o software é necessário ter o python 3.7 para cima, e instalar e importar algumas bibliotecas com os comandos descritos abaixo.
 
 ```
