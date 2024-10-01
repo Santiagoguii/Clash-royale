@@ -92,11 +92,11 @@ def listar_decks_porcentagem():
 
 
 def calcular_derrotas_combo():
-    combo = combo_entry.get().split(",") 
+    combo = ["Mortar", "Bats", "Miner", "Skeleton King", "Cannon Cart", "Goblin Gang", "Ice Wizard", "Arrows"]
     total_derrotas_combo = db.batalha.count_documents({
-        '$or': [
-            { "deck_jogador1.nome": { '$all': combo }, "vencedor": "jogador2" },
-            { "deck_jogador2.nome": { '$all': combo }, "vencedor": "jogador1" }
+        "$or": [
+            {"deck_jogador1.nome": {"$all": combo}, "vencedor": "jogador2"},
+            {"deck_jogador2.nome": {"$all": combo}, "vencedor": "jogador1"}
         ]
     })
     exibir_resultados([f"Total de derrotas usando o combo {', '.join(combo)}: {total_derrotas_combo}"])
@@ -312,7 +312,7 @@ min_porcentagem_entry = tk.Entry(scrollable_frame)
 # Botons
 btn_porcentagem_vitorias = tk.Button(scrollable_frame, text="Porcentagem de Vitórias", command=calcular_porcentagem_vitorias)
 btn_listar_decks = tk.Button(scrollable_frame, text="Listar Decks com Porcentagem de Vitórias", command=listar_decks_porcentagem)
-btn_calcular_derrotas_combo = tk.Button(scrollable_frame, text="Derrotas por Combo(x)", command=calcular_derrotas_combo)
+btn_calcular_derrotas_combo = tk.Button(scrollable_frame, text="Derrotas por Combo", command=calcular_derrotas_combo)
 btn_calcular_vitorias = tk.Button(scrollable_frame, text="Vitórias por Carta", command=calcular_vitorias_com_carta)
 btn_listar_combos_vitorias = tk.Button(scrollable_frame, text="Listar Combos com Porcentagem de Vitórias", command=listar_combos_vitorias)
 btn_cartas_maior_taxa_vitorias = tk.Button(scrollable_frame, text="Top 5 carta/Vitórias", command=cartas_maior_taxa_vitorias)
