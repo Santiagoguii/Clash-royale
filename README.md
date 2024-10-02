@@ -1,4 +1,4 @@
-# Clash Royale API**
+# Clash Royale API
 
 ## **🚀Objetivo do Projeto:**
 Armazenar dados de batalhas do jogo em um BD NoSQLpara viabilizar consultas analíticas que permitamanalisar estatísticas de vitórias/derrotas associadas ao
@@ -79,12 +79,11 @@ from tkinter import *
 - Parâmetros Necessários: 
   - Nenhum parâmetro adicional é necessário.
 
-
 ## **🛠️Construído com:**
-[Python](https://docs.python.org/pt-br/3/tutorial/) - linguaguem utilizada
-[Tkinter](https://www.tkdocs.com/tutorial/index.html) - Interface gráfica do usuário
+* [Python](https://docs.python.org/pt-br/3/tutorial/) - linguaguem utilizada
+* [Tkinter](https://www.tkdocs.com/tutorial/index.html) - Interface gráfica do usuário
 
 ## **✒️ Autores:**
-Guilherme Santiago* - Desenvolvedor - [github](https://github.com/santiagoguii)
-Mateus Caik* - Desenvolvedor - [github](https://github.com/mateuscaik)
-Micaelle Silva - Desenvolvedora - [github](https://github.com/micaellesilvaa)
+* Guilherme Santiago - Desenvolvedor - [GitHub](https://github.com/santiagoguii)
+* Mateus Caik - Desenvolvedor - [GitHub](https://github.com/mateuscaik)
+* Micaelle Silva - Desenvolvedora - [GitHub](https://github.com/micaellesilvaa)
